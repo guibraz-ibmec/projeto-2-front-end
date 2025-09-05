@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Footer</title>
+    <style>
+        .site-footer {
+            background-color: #333; /* Cor de fundo escura */
+            color: #fff; /* Cor do texto branca */
+            padding: 20px 0; /* Espaçamento interno (superior e inferior) */
+            text-align: center; /* Alinha o texto ao centro */
+            font-family: Arial, sans-serif; /* Fonte do texto */
+            position: relative; /* Mantém o footer no final da página */
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: flex; /* Permite alinhar os itens horizontalmente */
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+            max-width: 1200px; /* Largura máxima do conteúdo */
+            margin: 0 auto; /* Centraliza o bloco de conteúdo */
+        }
+
+        .footer-section {
+            flex: 1; /* Faz com que as seções ocupem o mesmo espaço */
+            min-width: 200px; /* Largura mínima para evitar quebras de linha indesejadas */
+            margin: 10px;
+        }
+
+        .footer-section h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p, .footer-section a {
+            font-size: 0.9em;
+            line-height: 1.5;
+            color: #ccc;
+            text-decoration: none; /* Remove o sublinhado dos links */
+        }
+
+        .footer-section a:hover {
+            color: #fff; /* Muda a cor do link ao passar o mouse */
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #555;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Informações</h4>
+                <p>Este é um site criado por fãns de Final Fantasy</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <p><a href="#">Página Inicial</a></p>
+                <p><a href="#">Sobre Nós</a></p>
+                <p><a href="#">Serviços</a></p>
+                <p><a href="#">Contato</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: seu.email@exemplo.com</p>
+                <p>Telefone: (00) 1234-5678</p>
+                <p>Endereço: Rua da Faculdade, 123</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
